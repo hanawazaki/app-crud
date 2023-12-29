@@ -1,0 +1,26 @@
+{
+  "peoples": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "place": "Cityville",
+      "date_born": "1990-05-15",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "address": "123 Main Street",
+      "gender": "Male",
+      "religion": "Christian"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "place": "Bandung",
+      "date_born": "1990-05-15",
+      "email": "jane.doe@example.com",
+      "phone": "+1234567890",
+      "address": "123 Main Street",
+      "gender": "Female",
+      "religion": "Moslem"
+    }
+  ]
+}
