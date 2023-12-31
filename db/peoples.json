@@ -1,64 +1,58 @@
 {
   "peoples": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "place": "Cityville",
-      "date_born": "1990-05-15",
-      "email": "john.doe@example.com",
-      "phone": "+1234567890",
-      "address": "Jalan ABC",
-      "city": "Bandung",
-      "gender": "Male",
-      "religion": "Christian"
+      "name": "wwww",
+      "email": "dawdwa@mail.com",
+      "notelp": "23323",
+      "gender": "Pria",
+      "religion": "Katolik",
+      "city": "sdasda",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Jane Doe",
-      "place": "Bandung",
-      "date_born": "1990-05-15",
-      "email": "jane.doe@example.com",
-      "phone": "+098765432",
-      "address": "Jalan XYZ",
-      "city": "Jakarta",
-      "gender": "Female",
-      "religion": "Moslem"
+      "name": "awdawd",
+      "email": "awdaw@mail.com",
+      "notelp": "234234",
+      "gender": "Pria",
+      "religion": "Islam",
+      "city": "asdasda",
+      "id": 2
     },
     {
-      "id": 2,
-      "name": "Jane Doe",
-      "place": "Bandung",
-      "date_born": "1990-05-15",
-      "email": "jane.doe@example.com",
-      "phone": "+098765432",
-      "address": "Jalan XYZ",
-      "city": "Jakarta",
-      "gender": "Female",
-      "religion": "Moslem"
+      "name": "wwww",
+      "email": "asdasd@mail.com",
+      "notelp": "a21232",
+      "gender": "Pria",
+      "religion": "Katolik",
+      "city": "dvd",
+      "id": 3
     },
     {
-      "id": 2,
-      "name": "Jane Doe",
-      "place": "Bandung",
-      "date_born": "1990-05-15",
-      "email": "jane.doe@example.com",
-      "phone": "+098765432",
-      "address": "Jalan XYZ",
-      "city": "Jakarta",
-      "gender": "Female",
-      "religion": "Moslem"
+      "name": "",
+      "email": "",
+      "notelp": "",
+      "gender": "",
+      "religion": "",
+      "city": "",
+      "id": 4
     },
     {
-      "id": 2,
-      "name": "Jane Doe",
-      "place": "Bandung",
-      "date_born": "1990-05-15",
-      "email": "jane.doe@example.com",
-      "phone": "+098765432",
-      "address": "Jalan XYZ",
-      "city": "Jakarta",
-      "gender": "Female",
-      "religion": "Moslem"
+      "name": "",
+      "email": "",
+      "notelp": "",
+      "gender": "",
+      "religion": "",
+      "city": "",
+      "id": 5
+    },
+    {
+      "name": "awdawdawdawd",
+      "email": "",
+      "notelp": "",
+      "gender": "",
+      "religion": "",
+      "city": "",
+      "id": 6
     }
   ]
 }

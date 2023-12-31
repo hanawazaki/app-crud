@@ -1,16 +1,17 @@
 <template>
   <div class="input-group flex flex-col gap-2 mb-5 w-full">
     <label for="name" class="">{{ label }}</label>
-    <select
-      class="select select-bordered w-full max-w-xs"
+    <input
+      :type="type"
+      :placeholder="placeholder"
+      class="input input-bordered w-full max-w-xs"
       :value="inputValue"
       @input="updateInput"
-    >
-      <option value="" disabled selected hidden>Pilih {{ label }}</option>
-      <option v-for="(option, index) in props.options" :key="index">
-        {{ option }}
-      </option>
-    </select>
+    />
+
+    <div v-if="isError" class="text-red-500">
+      <p class="text-xs">{{ label }} harus diisi</p>
+    </div>
   </div>
 </template>
 
@@ -21,22 +22,26 @@ const props = defineProps({
   label: {
     type: String,
   },
+  type: {
+    type: String,
+  },
   modelValue: {
     type: String,
   },
-  options: {
-    type: Array,
-  },
-  class: {
+  placeholder: {
     type: String,
+  },
+  isError: {
+    type: Boolean,
   },
 });
 
-const inputValue = ref("");
 const emits = defineEmits();
 
-const updateInput = (val) => {
-  inputValue.value = val.target.value;
+const inputValue = ref(props.modelValue);
+
+const updateInput = (event) => {
+  inputValue.value = event.target.value;
   emits("update:modelValue", inputValue.value);
 };
 </script>

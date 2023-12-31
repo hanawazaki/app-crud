@@ -1,8 +1,14 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import CreateModal from "./components/CreateModal.vue";
+import EditModal from "./components/EditModal.vue";
 
 const data = ref([]);
+const createModal = ref(false);
+
+const showCreateModal = () => {
+  createModal.value = !createModal.value;
+};
 
 const getData = async () => {
   try {
@@ -35,10 +41,7 @@ onMounted(() => {
               placeholder="Search..."
               class="input input-sm input-bordered w-full max-w-xs"
             />
-            <button
-              class="btn btn-outline btn-sm"
-              onclick="my_modal_1.showModal()"
-            >
+            <button class="btn btn-outline btn-sm" @click="showCreateModal">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -55,7 +58,10 @@ onMounted(() => {
               </svg>
               New Data
             </button>
-            <CreateModal />
+            <CreateModal
+              :createModal="createModal"
+              @modalshow="showCreateModal"
+            />
           </div>
         </div>
 
@@ -67,8 +73,8 @@ onMounted(() => {
               <tr>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Address</th>
                 <th>Phone</th>
+                <th>Gender</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -94,16 +100,23 @@ onMounted(() => {
                 <td>
                   {{ item.email }}
                 </td>
-                <td>{{ item.address }}</td>
                 <td>{{ item.phone }}</td>
+                <td>{{ item.gender }}</td>
                 <td class="">
                   <button class="btn btn-info btn-xs mr-2">View</button>
-                  <button class="btn btn-success btn-xs mr-2">Edit</button>
+                  <button
+                    class="btn btn-success btn-xs mr-2"
+                    onclick="my_modal_2.showModal()"
+                  >
+                    Edit
+                  </button>
+
                   <button class="btn btn-error btn-xs">Delete</button>
                 </td>
               </tr>
             </tbody>
           </table>
+          <EditModal />
         </div>
         <!--  -->
         <div class="flex justify-center my-5">
